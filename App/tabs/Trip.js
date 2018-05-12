@@ -1,0 +1,32 @@
+import React from 'react'
+import { View, Image, Text } from 'react-native'
+
+import BackgroundImage from '../BackgroundImage'
+
+const Trip = ({ user, info }) => {
+  const { avatar50 } = user
+  const { title, location, country, day, month, image } = info
+
+  return (
+    <View style={{ height: 115 }}>
+      <BackgroundImage source={image} />
+      <View style={{ flexDirection: 'row', padding: 10 }}>
+        <Image
+          source={avatar50}
+          style={{ marginRight: 10, borderRadius: 50 }}
+        />
+        <View style={{ width: '75%' }}>
+          <Text style={{ color: 'white' }}>{title}</Text>
+          <Text style={{ color: 'white' }}>
+            {location}, {country}
+          </Text>
+        </View>
+        <View style={{ alignItems: 'center' }}>
+          <Text style={{ color: 'red' }}>{day}</Text>
+          <Text style={{ color: 'white' }}>{month}</Text>
+        </View>
+      </View>
+    </View>
+  )
+}
+export default Trip

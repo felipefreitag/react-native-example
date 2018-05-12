@@ -23,13 +23,14 @@ export default class Tabs extends Component {
 
   render() {
     const { active } = this.state
+    const { user } = this.props
 
     return (
-      <View style={{ flex: 3 }}>
+      <View style={{ flex: 6 }}>
         <Navigation active={active} handleNavigate={this.handleNavigate} />
-        {active === 'future' && <Future />}
-        {active === 'joined' && <Joined />}
-        {active === 'past' && <Past />}
+        {active === 'future' && <Future user={user} />}
+        {active === 'joined' && <Joined user={user} />}
+        {active === 'past' && <Past user={user} />}
       </View>
     )
   }

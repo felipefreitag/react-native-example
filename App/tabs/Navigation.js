@@ -11,7 +11,7 @@ const Navigation = ({ active, handleNavigate }) => {
   return (
     <View
       style={{
-        height: 50,
+        height: 40,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center',
