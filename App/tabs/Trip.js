@@ -10,20 +10,20 @@ const Trip = ({ user, info }) => {
   return (
     <View style={{ height: 115 }}>
       <BackgroundImage source={image} />
-      <View style={{ flexDirection: 'row', padding: 10 }}>
+      <View style={{ flexDirection: 'row', padding: 13 }}>
         <Image
           source={avatar50}
           style={{ marginRight: 10, borderRadius: 50 }}
         />
         <View style={{ width: '75%' }}>
-          <Text style={{ color: 'white' }}>{title}</Text>
-          <Text style={{ color: 'white' }}>
+          <Text style={{ fontSize: 16, color: 'white' }}>{title}</Text>
+          <Text style={{ fontSize: 16, color: 'white' }}>
             {location}, {country}
           </Text>
         </View>
         <View style={{ alignItems: 'center' }}>
-          <Text style={{ color: 'red' }}>{day}</Text>
-          <Text style={{ color: 'white' }}>{month}</Text>
+          <Text style={{ fontSize: 16, color: 'red' }}>{day}</Text>
+          <Text style={{ fontSize: 16, color: 'white' }}>{month}</Text>
         </View>
       </View>
     </View>

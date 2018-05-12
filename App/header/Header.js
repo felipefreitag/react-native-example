@@ -12,7 +12,7 @@ const Header = props => {
         backgroundColor="rgba(0, 0, 0, 0.0)"
         translucent
       />
-      <View style={{ flex: 2, alignItems: 'center' }}>
+      <View style={{ flex: 1, alignItems: 'center' }}>
         <BackgroundImage source={require('../../assets/header.jpeg')} />
       </View>
       <UserInfo {...props} />

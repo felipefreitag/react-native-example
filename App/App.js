@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
 
-import { user } from './user'
+import { user } from './userData'
 
 import Header from './header/Header'
 import Tabs from './tabs/Tabs'

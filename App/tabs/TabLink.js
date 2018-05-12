@@ -7,11 +7,11 @@ const TabLink = ({ label, active, onPress }) => (
       height: 40,
       justifyContent: 'center',
       paddingHorizontal: 10,
-      borderBottomWidth: active ? 3 : 0,
-      borderBottomColor: '#5B97C8',
+      borderBottomWidth: 3,
+      borderBottomColor: active ? '#5B97C8' : 'lightgray',
     }}
     onPress={onPress}>
-    <Text>{label}</Text>
+    <Text style={{ fontWeight: 'bold' }}>{label}</Text>
   </TouchableOpacity>
 )
 
