@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView } from 'react-native'
+import { View, ScrollView } from 'react-native'
 
 import Trip from './Trip'
 
@@ -7,15 +7,13 @@ const Future = ({ user }) => {
   const { futureTrips } = user
 
   return (
-    <ScrollView
-      style={{ flex: 1 }}
-      contentContainerStyle={{
-        flexGrow: 1,
-      }}>
-      {futureTrips.map((trip, index) => (
-        <Trip user={user} key={index} info={trip} />
-      ))}
-    </ScrollView>
+    <View style={{ flex: 1 }}>
+      <ScrollView>
+        {futureTrips.map((trip, index) => (
+          <Trip user={user} key={index} info={trip} />
+        ))}
+      </ScrollView>
+    </View>
   )
 }
 export default Future

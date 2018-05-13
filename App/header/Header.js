@@ -6,14 +6,17 @@ import UserInfo from './UserInfo'
 
 const Header = props => {
   return (
-    <View style={{ flex: 4 }}>
+    <View style={{ flex: 4, backgroundColor: 'white' }}>
       <StatusBar
-        barStyle="dark-content"
+        barStyle="light-content"
         backgroundColor="rgba(0, 0, 0, 0.0)"
         translucent
       />
       <View style={{ flex: 1, alignItems: 'center' }}>
-        <BackgroundImage source={require('../../assets/header.jpeg')} />
+        <BackgroundImage
+          source={require('../../assets/header.jpeg')}
+          style={{ top: -20 }}
+        />
       </View>
       <UserInfo {...props} />
     </View>

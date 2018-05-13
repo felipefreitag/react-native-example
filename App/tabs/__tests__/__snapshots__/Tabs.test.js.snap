@@ -54,6 +54,11 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
       >
         FUTURE
       </Text>
@@ -77,8 +82,8 @@ exports[`renders correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderBottomColor": "#5B97C8",
-          "borderBottomWidth": 0,
+          "borderBottomColor": "lightgray",
+          "borderBottomWidth": 3,
           "height": 40,
           "justifyContent": "center",
           "opacity": 1,
@@ -92,6 +97,11 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
       >
         JOINED
       </Text>
@@ -115,8 +125,8 @@ exports[`renders correctly 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderBottomColor": "#5B97C8",
-          "borderBottomWidth": 0,
+          "borderBottomColor": "lightgray",
+          "borderBottomWidth": 3,
           "height": 40,
           "justifyContent": "center",
           "opacity": 1,
@@ -130,24 +140,26 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
       >
         PAST
       </Text>
     </View>
   </View>
-  <RCTScrollView
-    contentContainerStyle={
-      Object {
-        "flexGrow": 1,
-      }
-    }
+  <View
     style={
       Object {
         "flex": 1,
       }
     }
   >
-    <View />
-  </RCTScrollView>
+    <RCTScrollView>
+      <View />
+    </RCTScrollView>
+  </View>
 </View>
 `;

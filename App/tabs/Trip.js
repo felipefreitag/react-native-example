@@ -8,7 +8,7 @@ const Trip = ({ user, info }) => {
   const { title, location, country, day, month, image } = info
 
   return (
-    <View style={{ height: 115 }}>
+    <View style={{ height: '18%' }}>
       <BackgroundImage source={image} />
       <View style={{ flexDirection: 'row', padding: 13 }}>
         <Image
